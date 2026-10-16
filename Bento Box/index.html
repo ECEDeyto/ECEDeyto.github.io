@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Manhwa Collection</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Decorative background glows -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <main class="container-fluid collection-container">
+
+        <header class="collection-header">
+            <span class="eyebrow">✦ Personal Library</span>
+            <h1 class="gradient-title">My Manhwa Collection</h1>
+            <p class="subtitle">Stories worth reading, worlds worth getting lost in.</p>
+        </header>
+
+        <div class="bento-grid" id="bento">
+            <figure class="bento-box"><img src="images/30-years-since-the-prologue.webp" alt="30 Years Since the Prologue"></figure>
+            <figure class="bento-box"><img src="images/killerpeter.jpg" alt="Killer Peter"></figure>
+            <figure class="bento-box"><img src="images/my-exclusive-tower-guide.webp" alt="My Exclusive Tower Guide"></figure>
+            <figure class="bento-box"><img src="images/nebulascivilization.webp" alt="Nebula's Civilization"></figure>
+            <figure class="bento-box"><img src="images/of-all-things-i-became-a-crow.webp" alt="Of All Things, I Became a Crow"></figure>
+            <figure class="bento-box"><img src="images/pigpen2.jpg" alt="Pigpen"></figure>
+            <figure class="bento-box"><img src="images/raising-villains-the-right-way.webp" alt="Raising Villains the Right Way"></figure>
+            <figure class="bento-box"><img src="images/solo-leveling.webp" alt="Solo Leveling"></figure>
+            <figure class="bento-box"><img src="images/the-extras-academy-survival-guide.webp" alt="The Extra's Academy Survival Guide"></figure>
+            <figure class="bento-box"><img src="images/the-greatest-estate-developer.webp" alt="The Greatest Estate Developer"></figure>
+            <figure class="bento-box"><img src="images/the-max-level-players-100th-regression.webp" alt="The Max Level Player's 100th Regression"></figure>
+            <figure class="bento-box"><img src="images/the-youngest-son-of-the-eunhae-merchant-group.webp" alt="The Youngest Son of the Eunhae Merchant Group"></figure>
+            <figure class="bento-box"><img src="images/trashofthecountsfamily.jpg" alt="Trash of the Count's Family"></figure>
+            <figure class="bento-box"><img src="images/tyrant-of-the-tower-defense-game.webp" alt="Tyrant of the Tower Defense Game"></figure>
+        </div>
+
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+        <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+        <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">&#8250;</button>
+        <figure class="lightbox-content">
+            <img id="lightboxImg" src="" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
